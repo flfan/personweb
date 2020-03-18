@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1584519538574'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1584519538574#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOgAAsAAAAAB6AAAANUAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCbII7ATYCJAMMCwgABCAFhG0HVBufBsgehXEbHc5OY3i71IKA7Krq6dk9EpGsvexhZlLKiIjuFYrX79fe3aESdaefx0u452/75IvuR6bTGRKezBrtpmONCqGRf8X6Ps819W4hnh9ojlFhEYFHewMcD2igHVglsgbZBHnD2AUtcTEEYIgreTLZuYubrAUVs5UARF+30FlLxoDakC3QR6CtGKgiNqBBX1mp3APWB58Xn4gU+qCgkZgdizqmLDa6rCwHS91/HXWeiaXpbAAbBhIIhqGCaKh0VJGLQsHkMFQVDc3JWlQEylTe//8hEGgyrfWHBwoChBYz0xgAf+RRYNkRJMpgKLrqX0oAtIAKDMPYMMGVQCLMNfplsz1Hrtk37Lzu03v8plPjrhtlaC0ZVTZvXW1nKpXbHxUbbT1rU39idzjtzffGIgL38+B66nopliq3Pa68+Cj/SeWj8uNPjB49tH6Eg875PPjY/87/yhusXi+H7dDZ/JQZrqrYJo48rtj1OHHLseQcugNRbTrDqAOBv2ZhYPE5zHNivfH9nec793ZLqLz2z5TzIvvwqc8t1ie6wsW7L/d+HN7Xu+Lt33WrEkT20mRXk1P+hhrPjLzeOlmmlFomd0an2GcbtVVNTtqNAbsm1X/dHUc3Xj59//lrlMenmnmwZFlET3F+P0nVoTYy95Z/6cdeI9xhwH/yvtT9lu9wLuPMy0az5K/6RioAz7c/ggf8pyJ1gD4KdBb+BGHHElUTm0apKgJHYLgkZTdkUwC6DYFXnwtgyd9wjc2NRgT62CRQ0MMFEn28SZUZDA1GREOLPmkwJIiZ4UZYEZNDqAZAIAcAAnNeoWDKTUjM+SZV5i802PIPLeZCwpAKYTWhEb6i2zBrBHVCC1qmobs18LltprYwex1F6upxWhywtjFOlBciQsPz0Rn0MZ6iy+iEqI6NcegYCTzIBcuh6wYwNBLYaFKxa4zCWlhYR9WBiq2DHmsjixhEh0AsAIN9AIVJgA/3KhNthfevgwhSXHTiBkqVfxskJkHVDlQoUu5Azij8TpRbWSVhB0EVguAAnJgAD2Aa1ENcXAKAsLqeDWJCFJEDAiE1SlY53lVRXF7lvd8qwBBzIikUIYWKR3+zctHfQTcInSQkwhjzbh93k3RxU2c3ydRgDA==') format('woff2'),
+  url('./iconfont/iconfont.woff?t=1584519538574') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1584519538574') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1584519538574#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mailenvelopeletteremailnewsletter:before {
+  content: "\e62c";
+}
+
+.icon-github:before {
+  content: "\e602";
+}
+

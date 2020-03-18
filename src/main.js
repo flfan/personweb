@@ -2,12 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import ElementUI from 'element-ui'
 import './assets/styles/reset.css'
 import './assets/styles/global.styl'
-import 'element-ui/lib/theme-chalk/index.css'
-
-Vue.use(ElementUI)
+import './assets/styles/iconfont.css'
 
 Vue.config.productionTip = false
 
