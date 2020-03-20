@@ -1,27 +1,37 @@
 <template>
   <div class="item" ref="item">
-    <router-link :to="iteminfo.linkto">
-    <div class="wapper">
-      <img class="bg-img" :src="iteminfo.imgsrc">
-      <div class="text-wapper">
-        <h1 class="text">{{iteminfo.title}}</h1>
-        <p class="description">
-          <span class="em">描述：</span> {{iteminfo.description}}
-        </p>
+    <!-- <a :href="iteminfo.linkto" target="_blank"> -->
+      <div class="wapper" @click.prevent="handleClick">
+        <img class="bg-img" :src="iteminfo.imgsrc">
+        <div class="text-wapper">
+          <h1 class="text">{{iteminfo.title}}</h1>
+          <p class="description">
+            <span class="em">描述：</span> {{iteminfo.description}}
+          </p>
+        </div>
       </div>
-    </div>
-    </router-link>
+      <!-- <transition name="fade">
+        <div class="clickShow" v-show="isshow">
+          <project-detail @ProDetChange="HandleProDetChange"/>
+        </div>
+      </transition> -->
+    <!-- </a> -->
   </div>
 </template>
 
 <script>
+// import ProjectDetail from '../../detail/project-detail/project-detail'
+
 export default {
-  name: 'SectionItem',
-  data () {
-    return {
-      isshow: false
-    }
-  },
+  name: 'ProjectItem',
+  // components: {
+  //   // ProjectDetail
+  // },
+  // data () {
+  //   return {
+  //     isshow: false
+  //   }
+  // },
   props: {
     iteminfo: {
       type: Object,
@@ -35,6 +45,20 @@ export default {
       // console.log(this.$refs.item)
       // // this.isshow = true
     }, this.index * 500 + 500)
+  },
+  methods: {
+    handleClick () {
+      // console.log('javascript')
+      // if (!this.isshow) {
+      //   this.isshow = true
+      // }
+      this.$emit('proItemChange')
+    }
+    // HandleProDetChange () {
+    //   if (this.isshow) {
+    //     this.isshow = false
+    //   }
+    // }
   }
 }
 </script>

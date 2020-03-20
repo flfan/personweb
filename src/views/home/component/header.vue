@@ -1,9 +1,11 @@
 <template>
   <div class="mheader">
-    <div class="logo">
-      <img class="logo-img" src="@/assets/images/logo.png" alt="logo">
-      <div class="logo-text">ZeroBreeze</div>
-    </div>
+    <router-link to="/home">
+      <div class="logo">
+        <img class="logo-img" src="@/assets/images/logo.png" alt="logo">
+        <div class="logo-text">ZeroBreeze</div>
+      </div>
+    </router-link>
   </div>
 </template>
 

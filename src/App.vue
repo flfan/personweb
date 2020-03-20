@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <style lang="stylus" scoped>
 #id
   width 100%
-  // height 100%
-.linkTo
-  // font-size px2rem(20)
-  color red
+  height 100%
+// .linkTo
+//   font-size px2rem(20)
+//   color red
 </style>

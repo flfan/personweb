@@ -1,6 +1,7 @@
 <template>
   <div class="item" ref="item">
     <router-link :to="iteminfo.linkto">
+    <!-- <a :href="iteminfo.linkto"> -->
     <div class="wapper">
       <img class="bg-img" :src="iteminfo.imgsrc">
       <div class="text-wapper">
@@ -10,6 +11,7 @@
         </p>
       </div>
     </div>
+    <!-- </a> -->
     </router-link>
   </div>
 </template>

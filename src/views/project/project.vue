@@ -1,42 +1,55 @@
 <template>
   <div :class="['section', {fixwidth: fixWidthClass}]">
     <div class="container">
-      <common-item :iteminfo="item" :index="index" v-for="(item, index) in itemsinfos" :key="item.title"/>
+      <project-item
+      :iteminfo="item"
+      :index="index"
+      v-for="(item, index) in itemsinfos"
+      :key="item.title"
+      @proItemChange="handleproItemChange"/>
     </div>
+    <transition name="fade">
+        <div class="clickShow" v-show="isshow">
+          <project-detail @ProDetChange="HandleProDetChange"/>
+        </div>
+      </transition>
   </div>
 </template>
 
 <script>
-// import ProjectItem from './component/project-item'
-import CommonItem from '@/component/item'
+import ProjectItem from './component/project-item'
+// import CommonItem from '@/component/item'
+import ProjectDetail from '../detail/project-detail/project-detail'
 export default {
-  name: 'HomeSection',
+  name: 'HomeProject',
   components: {
-    // ProjectItem,
-    CommonItem
+    ProjectItem,
+    ProjectDetail
+    // CommonItem
   },
   data () {
     return {
       fixWidth: 1753,
       fixWidthClass: true,
+      isshow: false,
       itemsinfos: [
         {
           imgsrc: require('../../../src/assets/images/pro-1.jpg'),
           title: 'vue仿去哪儿网webApp',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home'
+          linkto: 'http://www.zerobreeze.ink/vuegowhere'
         },
         {
           imgsrc: require('../../../src/assets/images/pro-2.jpg'),
           title: 'webpack配置vueTodoList应用',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
+          linkto: 'http://www.zerobreeze.ink/vuetodo'
         },
         {
           imgsrc: require('../../../src/assets/images/pro-3.jpg'),
           title: '我的网站',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
+          linkto: '/home'
         },
         {
           imgsrc: require('../../../src/assets/images/pro-4.jpg'),
@@ -53,6 +66,18 @@ export default {
       this.fixWidthClass = true
     } else {
       this.fixWidthClass = false
+    }
+  },
+  methods: {
+    HandleProDetChange () {
+      if (this.isshow) {
+        this.isshow = false
+      }
+    },
+    handleproItemChange () {
+      if (!this.isshow) {
+        this.isshow = true
+      }
     }
   }
 }
