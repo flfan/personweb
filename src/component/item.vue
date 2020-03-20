@@ -1,5 +1,5 @@
 <template>
-  <div class="item" tef="item">
+  <div class="item" ref="item">
     <router-link :to="iteminfo.linkto">
     <div class="wapper">
       <img class="bg-img" :src="iteminfo.imgsrc">
@@ -16,9 +16,10 @@
 
 <script>
 export default {
-  name: 'SectionItem',
+  name: 'CommonItem',
   data () {
     return {
+      isshow: false
     }
   },
   props: {
@@ -26,7 +27,10 @@ export default {
       type: Object,
       required: true
     },
-    index: Number
+    index: {
+      type: Number,
+      default: 0
+    }
   },
   mounted () {
     setTimeout(() => {
@@ -40,6 +44,9 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~@styles/function.styl'
+.item
+  opacity 0
+  transition all 0.5s ease
 .wapper
   width 350px
   height 500px
@@ -67,15 +74,6 @@ export default {
         font-weight bold
   .bg-img
     width 100%
-    // height 50%
-    // top 0
-    // left 0
-    // position absolute
-    // background url('../../../../src/assets/images/gfda.jpg')
-    // background-position center center
-    // background-repeat no-repeat
-    // background-size cover
-    // filter blur(10px)
     border-radius 10px 10px 0 0
     z-index -1
 

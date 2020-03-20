@@ -3,7 +3,10 @@
     <overlay/>
     <div class="container">
       <home-header/>
-      <home-section/>
+      <!-- <home-section/> -->
+      <transition name="fade">
+        <router-view/>
+      </transition>
       <home-footer/>
     </div>
   </div>
@@ -12,13 +15,13 @@
 <script>
 import HomeHeader from './component/header'
 import HomeFooter from './component/footer'
-import HomeSection from './component/section'
+// import HomeSection from './component/section'
 import Overlay from '../layout/overlay'
 export default {
   components: {
     HomeHeader,
     HomeFooter,
-    HomeSection,
+    // HomeSection,
     Overlay
   }
 }
