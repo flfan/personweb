@@ -30,7 +30,7 @@ export default {
           imgsrc: require('../../../../src/assets/images/home-6.jpg'),
           title: '我的简历',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
+          linkto: '/home/resume'
         },
         {
           imgsrc: require('../../../../src/assets/images/home-10.jpg'),

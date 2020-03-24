@@ -20,6 +20,10 @@ export default [
       {
         path: '/home/project',
         component: () => import('../views/project/project')
+      },
+      {
+        path: '/home/resume',
+        component: () => import('../views/detail/resume-detail/resume')
       }
     ]
     // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')

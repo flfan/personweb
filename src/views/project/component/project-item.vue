@@ -2,7 +2,9 @@
   <div class="item" ref="item">
     <!-- <a :href="iteminfo.linkto" target="_blank"> -->
       <div class="wapper" @click.prevent="handleClick">
-        <img class="bg-img" :src="iteminfo.imgsrc">
+        <div class="img-wapper">
+          <img class="bg-img" :src="iteminfo.imgsrc">
+        </div>
         <div class="text-wapper">
           <h1 class="text">{{iteminfo.title}}</h1>
           <p class="description">
@@ -48,11 +50,11 @@ export default {
   },
   methods: {
     handleClick () {
-      // console.log('javascript')
+      // console.log(this.iteminfo)
       // if (!this.isshow) {
       //   this.isshow = true
       // }
-      this.$emit('proItemChange')
+      this.$emit('proItemChange', this.iteminfo)
     }
     // HandleProDetChange () {
     //   if (this.isshow) {
@@ -71,6 +73,8 @@ export default {
 .wapper
   width 350px
   height 500px
+  // width px2rem(350)
+  // height px2rem(500)
   // padding 20px
   position relative
   box-sizing border-box
@@ -93,9 +97,12 @@ export default {
     .description
       .em
         font-weight bold
-  .bg-img
-    width 100%
-    border-radius 10px 10px 0 0
-    z-index -1
+  .img-wapper
+    height 50%
+    overflow hidden
+    .bg-img
+      width 100%
+      border-radius 10px 10px 0 0
+      z-index -1
 
 </style>

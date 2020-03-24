@@ -10,9 +10,11 @@
     </div>
     <transition name="fade">
         <div class="clickShow" v-show="isshow">
-          <project-detail @ProDetChange="HandleProDetChange"/>
+          <project-detail
+          @ProDetChange="HandleProDetChange"
+          :contentData="nowItemInfo"/>
         </div>
-      </transition>
+    </transition>
   </div>
 </template>
 
@@ -34,30 +36,64 @@ export default {
       isshow: false,
       itemsinfos: [
         {
-          imgsrc: require('../../../src/assets/images/pro-1.jpg'),
+          // imgsrc: require('../../../src/assets/images/pro-1.jpg'),
+          imgsrc: require('../../../src/assets/images/vuegowhere.png'),
           title: 'vue仿去哪儿网webApp',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: 'http://www.zerobreeze.ink/vuegowhere'
+          linkto: 'http://www.zerobreeze.ink/vuegowhere',
+          github: 'http://www.github.com',
+          from: '慕课网',
+          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          usedTech: [
+            'vue vue-router vuex',
+            'webpack git eslint',
+            'awsome-swiper better-scroll'
+          ]
         },
         {
           imgsrc: require('../../../src/assets/images/pro-2.jpg'),
           title: 'webpack配置vueTodoList应用',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: 'http://www.zerobreeze.ink/vuetodo'
+          linkto: 'http://www.zerobreeze.ink/vuetodo',
+          github: 'http://www.github.com',
+          from: '慕课网',
+          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          usedTech: [
+            'vue vue-router vuex',
+            'webpack git eslint',
+            'awsome-swiper better-scroll'
+          ]
         },
         {
           imgsrc: require('../../../src/assets/images/pro-3.jpg'),
           title: '我的网站',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home'
+          linkto: 'http://www.zerobreeze.ink',
+          github: 'http://www.github.com',
+          from: '慕课网',
+          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          usedTech: [
+            'vue vue-router vuex',
+            'webpack git eslint',
+            'awsome-swiper better-scroll'
+          ]
         },
         {
           imgsrc: require('../../../src/assets/images/pro-4.jpg'),
           title: '其他',
           description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
+          linkto: 'http://www.zerobreeze.ink',
+          github: 'http://www.github.com',
+          from: '慕课网',
+          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          usedTech: [
+            'vue vue-router vuex',
+            'webpack git eslint',
+            'awsome-swiper better-scroll'
+          ]
         }
-      ]
+      ],
+      nowItemInfo: {}
     }
   },
   beforeMount () {
@@ -74,7 +110,9 @@ export default {
         this.isshow = false
       }
     },
-    handleproItemChange () {
+    handleproItemChange (info) {
+      this.nowItemInfo = info
+      // console.log(this.nowItemInfo)
       if (!this.isshow) {
         this.isshow = true
       }
