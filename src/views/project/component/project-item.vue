@@ -8,7 +8,7 @@
         <div class="text-wapper">
           <h1 class="text">{{iteminfo.title}}</h1>
           <p class="description">
-            <span class="em">描述：</span> {{iteminfo.description}}
+            <span class="em"></span> {{iteminfo.description}}
           </p>
         </div>
       </div>

@@ -29,21 +29,21 @@ export default {
         {
           imgsrc: require('../../../../src/assets/images/home-6.jpg'),
           title: '我的简历',
-          description: '在学习过程中做的项目与自己独立完成的项目',
+          description: '点击下载我的简历',
           linkto: '/home/resume'
-        },
-        {
-          imgsrc: require('../../../../src/assets/images/home-10.jpg'),
-          title: '我的兴趣',
-          description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
-        },
-        {
-          imgsrc: require('../../../../src/assets/images/home-5.jpg'),
-          title: '其他',
-          description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: '/home/project'
         }
+        // {
+        //   imgsrc: require('../../../../src/assets/images/home-10.jpg'),
+        //   title: '我的兴趣',
+        //   description: '在学习过程中做的项目与自己独立完成的项目',
+        //   linkto: '/home/project'
+        // },
+        // {
+        //   imgsrc: require('../../../../src/assets/images/home-5.jpg'),
+        //   title: '其他',
+        //   description: '在学习过程中做的项目与自己独立完成的项目',
+        //   linkto: '/home/project'
+        // }
       ]
     }
   },

@@ -97,7 +97,9 @@ export default {
     top px2rem(20)
     right px2rem(20)
     transition transform .5s ease
-    background #d19578
+    background #eba584
+    box-sizing border-box
+    overflow hidden
     z-index 30
     &:hover
       cursor pointer
@@ -105,7 +107,7 @@ export default {
   .container
     width 80%
     height 80%
-    background #d19578
+    background #eba584
     position absolute
     // top px2rem(120)
     top 0

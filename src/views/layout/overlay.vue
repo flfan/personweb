@@ -20,6 +20,6 @@ export default {
     width 100%
     height 100%
     background url('../../../src/assets/images/bgimg.jpg')
-    filter blur(4px)
+    // filter blur(4px)
     z-index -1
 </style>

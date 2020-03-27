@@ -37,61 +37,59 @@ export default {
       itemsinfos: [
         {
           // imgsrc: require('../../../src/assets/images/pro-1.jpg'),
-          imgsrc: require('../../../src/assets/images/vuegowhere.png'),
+          imgsrc: require('../../../src/assets/images/vuegowhere.jpg'),
           title: 'vue仿去哪儿网webApp',
-          description: '在学习过程中做的项目与自己独立完成的项目',
+          description: '慕课网课程的项目',
           linkto: 'http://www.zerobreeze.ink/vuegowhere',
-          github: 'http://www.github.com',
+          github: 'https://github.com/flfan/gowhere',
           from: '慕课网',
           projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
           usedTech: [
             'vue vue-router vuex',
             'webpack git eslint',
-            'awsome-swiper better-scroll'
+            'awesome-swiper better-scroll'
           ]
         },
         {
-          imgsrc: require('../../../src/assets/images/pro-2.jpg'),
-          title: 'webpack配置vueTodoList应用',
-          description: '在学习过程中做的项目与自己独立完成的项目',
+          imgsrc: require('../../../src/assets/images/todolist.jpg'),
+          title: 'vueTodoList应用',
+          description: '慕课网课程的项目',
           linkto: 'http://www.zerobreeze.ink/vuetodo',
-          github: 'http://www.github.com',
+          github: 'https://github.com/flfan/webpack-vue-todo',
           from: '慕课网',
-          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          projectDesc: '用webpack从零开始手动配置的vue应用',
           usedTech: [
             'vue vue-router vuex',
-            'webpack git eslint',
-            'awsome-swiper better-scroll'
+            'webpack git eslint'
           ]
         },
         {
-          imgsrc: require('../../../src/assets/images/pro-3.jpg'),
+          imgsrc: require('../../../src/assets/images/myweb2.jpg'),
           title: '我的网站',
-          description: '在学习过程中做的项目与自己独立完成的项目',
+          description: '独立项目',
           linkto: 'http://www.zerobreeze.ink',
-          github: 'http://www.github.com',
-          from: '慕课网',
-          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+          github: 'https://github.com/flfan/personweb',
+          from: '自己的项目',
+          projectDesc: '用vue开发的个人网站，使用vue-router路由。',
           usedTech: [
             'vue vue-router vuex',
-            'webpack git eslint',
-            'awsome-swiper better-scroll'
-          ]
-        },
-        {
-          imgsrc: require('../../../src/assets/images/pro-4.jpg'),
-          title: '其他',
-          description: '在学习过程中做的项目与自己独立完成的项目',
-          linkto: 'http://www.zerobreeze.ink',
-          github: 'http://www.github.com',
-          from: '慕课网',
-          projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
-          usedTech: [
-            'vue vue-router vuex',
-            'webpack git eslint',
-            'awsome-swiper better-scroll'
+            'webpack git eslint'
           ]
         }
+        // {
+        //   imgsrc: require('../../../src/assets/images/pro-4.jpg'),
+        //   title: '其他',
+        //   description: '在学习过程中做的项目与自己独立完成的项目',
+        //   linkto: 'http://www.zerobreeze.ink',
+        //   github: 'http://www.github.com',
+        //   from: '慕课网',
+        //   projectDesc: '用vue仿照去哪儿网的webapp开发的简单应用',
+        //   usedTech: [
+        //     'vue vue-router vuex',
+        //     'webpack git eslint',
+        //     'awsome-swiper better-scroll'
+        //   ]
+        // }
       ],
       nowItemInfo: {}
     }
