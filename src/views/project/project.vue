@@ -37,6 +37,21 @@ export default {
       itemsinfos: [
         {
           // imgsrc: require('../../../src/assets/images/pro-1.jpg'),
+          imgsrc: require('../../../src/assets/images/vue-music.jpg'),
+          title: 'zeroMusic',
+          description: '抓取QQ音乐api,开发的musicWebApp',
+          linkto: 'http://vuemusic.zerobreeze.ink',
+          github: 'https://github.com/flfan/vue-music',
+          from: '慕课网',
+          projectDesc: '抓取QQ音乐api,开发的musicWebApp',
+          usedTech: [
+            'vue vue-router vuex',
+            'webpack git eslint',
+            'awesome-swiper better-scroll'
+          ]
+        },
+        {
+          // imgsrc: require('../../../src/assets/images/pro-1.jpg'),
           imgsrc: require('../../../src/assets/images/vuegowhere.jpg'),
           title: 'vue仿去哪儿网webApp',
           description: '慕课网课程的项目',
